@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script>
+		window.onload = function() {
+			showVersion();
+		}
+	</script>
+</head>
+<body class="body">
+<h1 class="title">Simple Calculator</h1>
+	<div class="container">
+		<input type="text"
+		       onchange="calculate(this.value)"
+		       title="calculator"
+		       placeholder="Enter an operation"
+		       class="input">
+		<div class="result-container">
+			<div class="title">Result</div>
+			<span id ="result">3</span>
+		</div>
+	</div>
+
+	<div class="version">version <span id="version"></span></div>
+</body>
+<script src="scripts/calculator.js"></script>
+<script src="scripts/main.js"></script>
+
+</html>
